@@ -7,7 +7,7 @@ int ft_put_hexa(unsigned long long hexa)
     count = 0;
     if (hexa >= 16)
     {
-        
+        return count;
     }
-
+    return count;
 }
