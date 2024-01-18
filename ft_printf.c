@@ -13,8 +13,8 @@ static int ft_put_depend(va_list args, char c)
         return (count = ft_put_adr(va_arg(args, void *)));
     else if(c == 'd' || c == 'i')
         return (count = ft_put_nbr(va_arg(args, int)));
-    // else if(c == 'c')
-    //     return (count = ft_putchar(va_arg(args, int)));
+    else if(c == 'u')
+        return (count = ft_put_unbr(va_arg(args, int)));
     // else if(c == 'c')
     //     return (count = ft_putchar(va_arg(args, int)));
     // else if(c == 'c')

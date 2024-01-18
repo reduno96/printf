@@ -15,5 +15,6 @@ int ft_put_str(char *str);
 int ft_put_adr(void *adr);
 int ft_put_hexa(unsigned long long hexa);
 int ft_put_nbr(int nbr);
+int ft_put_unbr(unsigned int nbr);
 
 #endif
