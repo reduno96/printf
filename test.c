@@ -3,8 +3,7 @@
 
 int main ()
 {
-    ft_printf("%d\n", 11000);
+    printf(NULL);
 
-    ft_printf("%u\n",-1234);
-    printf("%u\n",-1234);
+    return (0);
 }

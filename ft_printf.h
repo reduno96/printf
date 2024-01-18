@@ -1,4 +1,4 @@
-# ifndef FT_PRINTF_H
+#ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
 # include <stdarg.h>
@@ -7,14 +7,13 @@
 # define HEX_UPP "0123456789ABCDEF"
 # define HEX_LOW "0123456789abcdef"
 
-
 int	ft_printf(const char *str, ...);
 
 int ft_put_char(int c);
-int ft_put_str(char *str);
-int ft_put_adr(void *adr);
-int ft_put_hexa(unsigned long long hexa);
-int ft_put_nbr(int nbr);
-int ft_put_unbr(unsigned int nbr);
+int	ft_put_str(char *str);
+int	ft_put_adr(void *adr);
+int	ft_put_hexa(unsigned long long hexa, int is_upp);
+int	ft_put_nbr(int nbr);
+int	ft_put_unbr(unsigned int nbr);
 
 #endif
