@@ -11,16 +11,16 @@ static int ft_put_depend(va_list args, char c)
         return (count = ft_put_str(va_arg(args, char *)));
     else if(c == 'p')
         return (count = ft_put_adr(va_arg(args, void *)));
+    else if(c == 'd' || c == 'i')
+        return (count = ft_put_nbr(va_arg(args, int)));
     // else if(c == 'c')
     //     return (count = ft_putchar(va_arg(args, int)));
     // else if(c == 'c')
     //     return (count = ft_putchar(va_arg(args, int)));
     // else if(c == 'c')
     //     return (count = ft_putchar(va_arg(args, int)));
-    // else if(c == 'c')
-    //     return (count = ft_putchar(va_arg(args, int)));
-    // else if(c == 'c')
-    //     return (count = ft_putchar(va_arg(args, int)));
+    else
+        return (count = ft_put_char(c));
     return (count);
 }
 
