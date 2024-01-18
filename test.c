@@ -3,8 +3,7 @@
 
 int main ()
 {
-    int fs = ft_printf("a%cbcd%s|\n", 'e', "redo");
-    int fd = printf   ("a%cbcd%s|\n", 'e', "redo");
-    printf("%d\n",fs);
+    int fd = ft_printf("%d", 11000);
+
     printf("%d\n",fd);
 }
