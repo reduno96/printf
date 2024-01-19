@@ -1,6 +1,6 @@
 #include "ft_printf.h"
 
-int	ft_put_hexa(unsigned long long hexa, int is_upper)
+int	ft_put_hexa(unsigned long hexa, int is_upper)
 {
 	int count;
 

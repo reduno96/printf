@@ -3,7 +3,7 @@
 int	ft_put_nbr(int nbr)
 {
 	int count;
-	long long_nbr;
+	long long long_nbr;
 
 	count = 0;
 	long_nbr = nbr;
