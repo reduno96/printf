@@ -9,7 +9,7 @@ NAME = libftprintf.a
 
 RM = rm -rf 
 
-iC = cc
+CC = cc
 
 CFLAGS = -Wall -Wextra -Werror 
 
@@ -18,7 +18,7 @@ all: ${NAME}
 ${NAME}: ${OBJS}
 	${LIBC} ${NAME} ${OBJS}
 
-%.o: %.c libftprinft.a
+%.o: %.c ft_printf.h
 	${CC} ${CFLAGS} -c $<
 
 clean:
