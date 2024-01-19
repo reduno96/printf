@@ -6,7 +6,7 @@
 /*   By: rel-mora <rel-mora@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 19:07:30 by rel-mora          #+#    #+#             */
-/*   Updated: 2024/01/19 19:12:44 by rel-mora         ###   ########.fr       */
+/*   Updated: 2024/01/19 22:09:18 by rel-mora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 int	ft_printf(const char *str, ...);
 
-int ft_put_char(int c);
+int	ft_put_char(int c);
 int	ft_put_str(char *str);
 int	ft_put_adr(void *adr);
 int	ft_put_hexa(unsigned long hexa, int is_upp);

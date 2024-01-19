@@ -6,7 +6,7 @@
 /*   By: rel-mora <rel-mora@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 19:00:36 by rel-mora          #+#    #+#             */
-/*   Updated: 2024/01/19 19:17:37 by rel-mora         ###   ########.fr       */
+/*   Updated: 2024/01/19 20:47:43 by rel-mora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	ft_put_depend(va_list args, char c)
 	else if (c == 'u')
 		return (count = ft_put_unbr(va_arg(args, int)));
 	else if (c == 'x')
-		return (count = ft_put_hexa(va_arg(args, unsigned int), 0));
+		return (count = ft_put_hexa(va_arg(args, unsigned int ), 0));
 	else if (c == 'X')
 		return (count = ft_put_hexa(va_arg(args, unsigned int), 1));
 	else if (c == '%')

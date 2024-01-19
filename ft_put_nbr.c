@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_put_nbr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rel-mora <rel-mora@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/01/19 22:13:37 by rel-mora          #+#    #+#             */
+/*   Updated: 2024/01/19 22:14:40 by rel-mora         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
 int	ft_put_nbr(int nbr)
 {
-	int count;
-	long long long_nbr;
+	int			count;
+	long long	long_nbr;
 
 	count = 0;
 	long_nbr = nbr;
