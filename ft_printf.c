@@ -6,7 +6,7 @@
 /*   By: rel-mora <rel-mora@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/19 19:00:36 by rel-mora          #+#    #+#             */
-/*   Updated: 2024/01/19 20:47:43 by rel-mora         ###   ########.fr       */
+/*   Updated: 2024/01/21 13:41:43 by rel-mora         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,12 +57,6 @@ int	ft_printf(const char *str, ...)
 	{
 		if (*str == '%' && ft_is_flag(*(str + 1)) == 1)
 			count += ft_put_depend(args, *(++str));
-		else if (*str == '%' && ft_is_flag(*(str + 1)) == 0
-			&& *(str + 1) != '\0')
-		{
-			count += ft_put_char(*str);
-			count += ft_put_char(*(++str));
-		}
 		else if (*str != '%' )
 			count += ft_put_char(*str);
 		str++;
